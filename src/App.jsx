@@ -14,8 +14,11 @@ function App() {
   return (
     <>
       <Header />
-      <TaskList taskList={tasks} />
-      <NewTask newTasks={updateTasks} />
+
+      <div className="container">
+        <TaskList taskList={tasks} />
+        <NewTask newTasks={updateTasks} />
+      </div>
     </>
   );
 }

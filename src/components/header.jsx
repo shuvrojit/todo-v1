@@ -1,9 +1,5 @@
 const Header = () => {
-  return (
-    <div className="header">
-      <h1>Todo</h1>
-    </div>
-  );
+  return <h1 id="title">Todo</h1>;
 };
 
 export default Header;

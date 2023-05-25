@@ -12,9 +12,15 @@ const NewTask = ({ newTasks }) => {
     <div className="new-task">
       <h2>New Task</h2>
       <form onSubmit={AddTask}>
-        <input />
-        <textarea />
-        <button type="submit">Submit</button>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="note">Note</label>
+        <textarea type="text" name="note" id="note" />
+        <div className="buttons">
+          <button type="button">Cancel</button>
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </div>
   );
