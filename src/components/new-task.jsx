@@ -6,7 +6,7 @@ const NewTask = ({ newTasks, isClassToggled, updateClassToggle }) => {
     const task = {
       id: nanoid(),
       title: event.target[0].value,
-      body: event.target[0].value,
+      body: event.target[1].value,
     };
     newTasks(task);
     updateClassToggle();
