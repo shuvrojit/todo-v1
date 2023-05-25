@@ -18,6 +18,9 @@ function App() {
       <div className="container">
         <TaskList taskList={tasks} />
         <NewTask newTasks={updateTasks} />
+        <button id="add" type="button">
+          +
+        </button>
       </div>
     </>
   );
