@@ -10,7 +10,7 @@ function App() {
   function updateTasks(value) {
     setTasks([...tasks, value]);
   }
-  console.log(tasks);
+  // console.log(tasks);
   return (
     <>
       <Header />
