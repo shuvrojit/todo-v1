@@ -10,6 +10,8 @@ const NewTask = ({ newTasks, isClassToggled, updateClassToggle }) => {
     };
     newTasks(task);
     updateClassToggle();
+    event.target[0].value = "";
+    event.target[1].value = "";
   };
 
   return (
