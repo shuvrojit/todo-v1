@@ -6,19 +6,27 @@ import TaskList from "./components/task-list";
 
 function App() {
   const [tasks, setTasks] = useState([]);
+  const [isClassToggled, setClassToggled] = useState(false);
 
   function updateTasks(value) {
     setTasks([...tasks, value]);
   }
-  // console.log(tasks);
+
+  function updateClassToggle() {
+    setClassToggled(!isClassToggled);
+  }
+
   return (
     <>
       <Header />
-
       <div className="container">
         <TaskList taskList={tasks} />
-        <NewTask newTasks={updateTasks} />
-        <button id="add" type="button">
+        <NewTask
+          newTasks={updateTasks}
+          isClassToggled={isClassToggled}
+          updateClassToggle={updateClassToggle}
+        />
+        <button id="add" type="button" onClick={updateClassToggle}>
           +
         </button>
       </div>

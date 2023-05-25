@@ -8,7 +8,7 @@ const TaskList = ({ taskList }) => {
       ) : (
         taskList.map((task) => {
           return (
-            <div className="task">
+            <div className="task" key={task.id}>
               <h3>{task.title}</h3>
               <p>{task.body}</p>
             </div>
