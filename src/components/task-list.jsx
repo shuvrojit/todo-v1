@@ -3,7 +3,7 @@ const TaskList = ({ taskList }) => {
     <div className="task-list">
       <h2>Task lists</h2>
 
-      {taskList == 0 ? (
+      {taskList.length == 0 ? (
         <h3>No tasks</h3>
       ) : (
         taskList.map((task) => {

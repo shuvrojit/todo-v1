@@ -94,3 +94,13 @@ button {
   bottom: 2rem;
   right: 1.5rem;
 }
+
+.task {
+  margin: 1rem 0;
+  border: 1px solid orangered;
+  padding: 5px 10px;
+}
+
+.task p {
+  margin-top: 10px;
+}
